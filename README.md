@@ -17,7 +17,7 @@ Site de prezentare static, realizat cu HTML, CSS și JavaScript vanilla.
 │   └── main.js
 ├── assets/
 │   ├── images/
-│   │   ├── hero.jpg          # adaugă imaginea principală
+│   │   ├── hero.jpg        
 │   │   ├── tort.jpg
 │   │   ├── prajituri.jpg
 │   │   └── deserturi.jpg
