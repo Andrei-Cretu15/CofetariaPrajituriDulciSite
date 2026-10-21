@@ -18,3 +18,12 @@ if (contactForm && formStatus) {
     contactForm.reset();
   });
 }
+
+const icing = document.querySelector(".icing-drip");
+
+if (icing && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  window.addEventListener("scroll", () => {
+    const offset = Math.min(window.scrollY * 0.08, 12);
+    icing.style.transform = `translateY(${offset}px)`;
+  }, { passive: true });
+}

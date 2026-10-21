@@ -17,6 +17,7 @@ Site de prezentare static, realizat cu HTML, CSS și JavaScript vanilla.
 │   └── main.js
 ├── assets/
 │   ├── images/
+│   │   ├── brand-cofetaria.jpg
 │   │   ├── hero.jpg        
 │   │   ├── tort.jpg
 │   │   ├── prajituri.jpg
