@@ -8,15 +8,29 @@
       content="Contactează Cofetăria Prăjituri Dulci pentru comenzi și torturi personalizate."
     />
     <title>Contact | Cofetăria Prăjituri Dulci</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="../index.html"
-          ><span class="logo-mark">PD</span
-          ><span>Cofetăria <strong>Prăjituri Dulci</strong></span></a
-        ><button
+        <a
+          class="logo"
+          href="../index.html"
+          aria-label="Cofetăria Prăjituri Dulci - pagina principală"
+        >
+          <img
+            class="logo-image"
+            src="../assets/images/logo/logo-text.png"
+            alt="Cofetăria Prăjituri Dulci Sibiu"
+          />
+        </a>
+        <button
           class="menu-toggle"
           aria-label="Deschide meniul"
           aria-expanded="false"
@@ -48,18 +62,18 @@
             </p>
             <div class="contact-details">
               <p>
-                <strong>Telefon</strong><br /><a href="tel:+40740123456"
-                  >0740 123 456</a
+                <strong>Telefon</strong><br /><a href="tel:+40722300473"
+                  >+40 722 300 473</a
                 >
               </p>
               <p>
                 <strong>Email</strong><br /><a
-                  href="mailto:hello@prajituridulci.ro"
-                  >hello@prajituridulci.ro</a
+                  href="mailto:eugenlapuste@yahoo.com"
+                  >eugenlapuste@yahoo.com</a
                 >
               </p>
               <p>
-                <strong>Adresă</strong><br />Str. Florilor nr. 12, București
+                <strong>Adresă</strong><br /><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x474c67c4cc5dfbb1:0x7cac63be678029b4?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener noreferrer">Strada Ana Ipătescu 87, 550260 Sibiu</a>
               </p>
             </div>
           </div>
@@ -89,10 +103,31 @@
     </main>
     <footer class="site-footer">
       <div class="container footer-bottom">
-        <span>© 2025 Cofetăria Prăjituri Dulci</span
-        ><a href="../index.html">Înapoi acasă →</a>
+        <span>© 2025 Cofetăria Prăjituri Dulci</span>
+        <span>Made by Andrei Crețu</span>
+        <nav class="social-links" aria-label="Rețele sociale">
+          <a href="https://www.instagram.com/prajituridulcisibiu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram <span>↗</span></a>
+          <a href="https://www.facebook.com/prajituri.dulci.92/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook <span>↗</span></a>
+          <a href="https://wa.me/40722300473" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp <span>↗</span></a>
+        </nav>
+        <a class="footer-address" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x474c67c4cc5dfbb1:0x7cac63be678029b4?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener noreferrer">Strada Ana Ipătescu 87, 550260 Sibiu</a>
+        <a href="../index.html">Înapoi acasă →</a>
       </div>
     </footer>
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/40722300473?text=Bun%C4%83!%20A%C8%99%20dori%20mai%20multe%20detalii%20despre%20produsele%20voastre."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Scrie-ne pe WhatsApp"
+    >
+      <span class="whatsapp-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M12 3.2a8.8 8.8 0 0 0-7.56 13.3L3.2 20.8l4.43-1.17A8.8 8.8 0 1 0 12 3.2Zm0 16.1a7.28 7.28 0 0 1-3.7-1l-.27-.16-2.63.7.7-2.56-.18-.28A7.28 7.28 0 1 1 12 19.3Zm3.98-5.45c-.22-.11-1.3-.64-1.5-.71-.2-.08-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.15-.26.17-.48.06a5.9 5.9 0 0 1-1.75-1.08 6.55 6.55 0 0 1-1.2-1.5c-.13-.22 0-.34.1-.45l.34-.4c.11-.13.15-.22.22-.37.08-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.42c-.15 0-.39.06-.6.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.8 3.36.53.23.94.36 1.26.46.53.17 1.01.15 1.4.09.43-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.06-.09-.2-.15-.42-.26Z" />
+        </svg>
+      </span>
+      <span class="whatsapp-label">Scrie-ne pe WhatsApp</span>
+    </a>
     <script src="../js/main.js"></script>
   </body>
 </html>
