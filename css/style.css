@@ -575,6 +575,32 @@ a {
   max-width: 650px;
   margin-bottom: 0;
 }
+.product-details {
+  max-width: 760px;
+  margin-top: 24px;
+  color: var(--muted);
+}
+.product-note {
+  margin: 0 0 10px;
+}
+.product-note strong {
+  color: var(--dark);
+}
+.price-list {
+  display: grid;
+  gap: 7px;
+  margin-top: 18px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--accent);
+  background: #fff;
+}
+.price-list p {
+  margin: 0;
+  font-size: 14px;
+}
+.price-list strong {
+  color: var(--dark);
+}
 .product-category .cake-gallery {
   margin-top: 28px;
 }
