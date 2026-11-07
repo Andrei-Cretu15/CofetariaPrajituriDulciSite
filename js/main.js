@@ -19,6 +19,51 @@ if (contactForm && formStatus) {
   });
 }
 
+const imageLightbox = document.querySelector(".image-lightbox");
+const lightboxImage = imageLightbox?.querySelector(".image-lightbox-image");
+const lightboxClose = imageLightbox?.querySelector(".image-lightbox-close");
+const lightboxImages = document.querySelectorAll(
+  ".products-gallery .gallery-item img, .cake-album .cake-slide img",
+);
+
+const closeImageLightbox = () => {
+  if (!imageLightbox || !lightboxImage) return;
+  imageLightbox.classList.remove("open");
+  imageLightbox.setAttribute("aria-hidden", "true");
+  lightboxImage.removeAttribute("src");
+  document.body.style.overflow = "";
+};
+
+lightboxImages.forEach((image) => {
+  image.parentElement?.setAttribute("tabindex", "0");
+  image.parentElement?.setAttribute("role", "button");
+  image.parentElement?.setAttribute("aria-label", `Mărește imaginea: ${image.alt}`);
+  const openImageLightbox = () => {
+    if (!imageLightbox || !lightboxImage) return;
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+    imageLightbox.classList.add("open");
+    imageLightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    lightboxClose?.focus();
+  };
+  image.parentElement?.addEventListener("click", openImageLightbox);
+  image.parentElement?.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openImageLightbox();
+    }
+  });
+});
+
+lightboxClose?.addEventListener("click", closeImageLightbox);
+imageLightbox?.addEventListener("click", (event) => {
+  if (event.target === imageLightbox) closeImageLightbox();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeImageLightbox();
+});
+
 const icing = document.querySelector(".icing-drip");
 
 if (icing && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
